@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shor icon" href="assest/hero/alraza.png">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../Lights Out/icofont/icofont.min.css">
+    <link rel="stylesheet" href="../Lights Out/css/movies.css">
+
+
+    <script src="https://kit.fontawesome.com/d6aaafd6e0.js"></script>
+    <link href="../Lights Out/characters/lacasa/lacasa/style.css" rel="stylesheet">
+
+    <title>Lights-Out</title>
+
+    <style>
+         :root {
+            --clr-neon: hsl(317 100% 54%);
+            --clr-bg: hsl(323 21% 16%);
+        }
+        
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+        
+        .neon-button {
+            font-size: 4rem;
+            display: inline-block;
+            cursor: pointer;
+            text-decoration: none;
+            color: var(--clr-neon);
+            border: var(--clr-neon) 0.125em solid;
+            padding: 0.25em 1em;
+            border-radius: 0.25em;
+            text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+            box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
+            position: relative;
+        }
+        
+        .neon-button::before {
+            pointer-events: none;
+            content: "";
+            position: absolute;
+            background: var(--clr-neon);
+            top: 120%;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+            filter: blur(1em);
+            opacity: 0.7;
+        }
+        
+        .neon-button::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            box-shadow: 0 0 2em 0.5em var(--clr-neon);
+            opacity: 0;
+            background-color: var(--clr-neon);
+            z-index: -1;
+            transition: opacity 100ms linear;
+        }
+        
+        .neon-button:hover,
+        .neon-button:focus {
+            color: var(--clr-bg);
+            text-shadow: none;
+        }
+        
+        .neon-button:hover::before,
+        .neon-button:focus::before {
+            opacity: 1;
+        }
+        
+        .neon-button:hover::after,
+        .neon-button:focus::after {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+
+
+<body onload="preloader()">
+    <div class="preloader">
+        <img src="assest/loader/preloader.gif" alt="preloader">
+    </div>
+    <header>
+        <nav>
+            <div class="brand">
+                <a href="" class="brand-logo neon-button">Lights-Out</a>
+                <div class="nav-toggle">
+                    <div class="toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="movies.html">Movies</a></li>
+                <li><a href="tv shows.html">Tv Shows</a></li>
+                <!-- <li><a href="index.html">Blogs</a></li> -->
+                <li><a href="login.html">Login</a></li>
+            </ul>
+            <figure class="user">
+
+            </figure>
+        </nav>
+    </header>
+
+    <div class="movie-container">
+        <div class="heading">
+            <h4>Tv Shows</h4>
+        </div>
+
+
+
+        <!-- lahon mnkoon 5lsnaa la3end tv shows-->
+
+        <div>
+
+            <div class="content">
+                <div class="text-area"><br><br><br><br><br><br>
+                    <h1 class="text-area">Money Heist</h1><br><br><br><br>
+                    <br><br><br><br><br><br><br><br><br><br>
+                    <h4 class="text-area">Drama Horror Action Family -<br> 5 Seasons</h4>
+                    <h3 class="text-area" style="color: #ecd71b;">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i></h3>
+                    <br>
+                    <h2 class="text-area">
+                        Eight thieves take hostages and lock themselves in the Royal Mint of Spain<br> as a criminal mastermind manipulates the police to carry out his plan.
+                    </h2><br><br>
+                    <a href="../Lights Out/lacasa/money.html" class="btn">
+                        <i class="fa fa-play-circle-o" aria-hidden="true"></i> Play Now</a>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- search bar and search filter  -->
+        <br>
+
+
+        <div class="filter-container">
+            <div class="btn">
+                <button class="btn-filter" onclick="filterFunction('all')">All</button>
+                <button class="btn-filter" onclick="filterFunction('action')">Action</button>
+                <button class="btn-filter" onclick="filterFunction('horror')">Horror</button>
+                <button class="btn-filter" onclick="filterFunction('adventure')">Adventure</button>
+                <!-- <button class="btn-filter" onclick="filterFunction('tvshows')">Tv Shows</button> -->
+                <button class="btn-filter" onclick="filterFunction('drama')">Drama</button>
+            </div>
+            <div class="movie-search">
+                <input type="text" placeholder="search Movies here" class="movieSearcher">
+                <i class="icofont-search-1 searchbtn"></i>
+            </div>
+        </div>
+
+        <section class="movie-wrapper">
+            <!-- movies and tve shows -->
+        </section>
+    </div>
+    <!-- scroll -->
+
+    <div class="scroll">
+        <i class="icofont-rounded-up"></i>
+    </div>
+    <!-- footer -->
+    <div class="footer-container">
+        <footer>
+            <a href="index.html">Lights-Out</a>
+            <p>copyright &copy; 2022 <span> Lights-Out </span> all rights reserved </p>
+            <div class="social">
+                <i class="icofont-facebook"></i>
+                <i class="icofont-twitter"></i>
+                <i class="icofont-instagram"></i>
+            </div>
+        </footer>
+    </div>
+    <script src="js/try.js"></script>
+</body>
+
+
+
+</html>
