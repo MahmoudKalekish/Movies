@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shor icon" href="assest/hero/alraza.png">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Lights-Out</title>
+
+
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: black;
+        }
+        
+        .video-card {
+            display: inline-block;
+            border: 1px solid #ccc;
+            width: 300px;
+            border-radius: 6px;
+            margin: 16px;
+            box-shadow: 4px 4px 6px #ccc;
+        }
+        
+        .thumbnail {
+            width: 300px;
+            border-top-left-radius: 6px;
+            border-top-right-radius: 6px;
+        }
+        
+        .video-data-section {
+            padding: 16px;
+        }
+        
+        .video-title {
+            font-size: 15px;
+            margin: 0;
+            margin-bottom: 16px;
+            color: white;
+        }
+        
+        .channel-pic {
+            width: 40px;
+            border-radius: 50%;
+        }
+        
+         :root {
+            --clr-neon: hsl(317 100% 54%);
+            --clr-bg: hsl(323 21% 16%);
+        }
+        
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+        
+        .neon-button {
+            font-size: 25px;
+            display: inline-block;
+            cursor: pointer;
+            text-decoration: none;
+            color: var(--clr-neon);
+            border: var(--clr-neon) 0.125em solid;
+            padding: 0.25em 1em;
+            border-radius: 0.25em;
+            text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+            box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
+            position: relative;
+        }
+        
+        .neon-button::before {
+            pointer-events: none;
+            content: "";
+            position: absolute;
+            background: var(--clr-neon);
+            top: 120%;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+            filter: blur(1em);
+            opacity: 0.7;
+        }
+        
+        .neon-button::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            box-shadow: 0 0 2em 0.5em var(--clr-neon);
+            opacity: 0;
+            background-color: var(--clr-neon);
+            z-index: -1;
+            transition: opacity 100ms linear;
+        }
+        
+        .neon-button:hover,
+        .neon-button:focus {
+            color: var(--clr-bg);
+            text-shadow: none;
+        }
+        
+        .neon-button:hover::before,
+        .neon-button:focus::before {
+            opacity: 1;
+        }
+        
+        .neon-button:hover::after,
+        .neon-button:focus::after {
+            opacity: 1;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <header>
+
+        <nav>
+            <div class="brand">
+                <a href="../lacasa/money.html" class="brand-logo neon-button">back</a>
+                <div class="nav-toggle">
+                    <div class="toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+    </header><br>
+    <br><br>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <div class="video-card">
+        <img class="thumbnail" src="https://alotofrandomcrap.files.wordpress.com/2018/06/casacover.jpg?w=1100" alt="Money Heist Cover" />
+
+        <div class="video-data-section">
+            <h3 class="video-title">Money Heist: Episode 1</h3>
+            <img class="channel-pic" src="https://i.pinimg.com/474x/90/f2/0e/90f20eff95f277c0d1152cecd1d07cc3.jpg" alt="Professor" />
+
+
+            <i style="color:white;">Professor</i> &nbsp;
+            <input type="button" class="w3-button w3-purple" name="Play" value="Play" id="play" >
+
+
+        </div>
+    </div>
+
+    <div class="video-card">
+        <img class="thumbnail" src="https://alotofrandomcrap.files.wordpress.com/2018/06/casacover.jpg?w=1100" alt="Money Heist Cover" />
+        <div class="video-data-section">
+            <h3 class="video-title">Money Heist: Episode 2</h3>
+            <img class="channel-pic" src="https://i.pinimg.com/474x/90/f2/0e/90f20eff95f277c0d1152cecd1d07cc3.jpg" alt="Professor" />
+            <i style="color:white;">Professor</i>&nbsp;
+            <input type="button" class="w3-button w3-purple" name="Play" value="Play" id="play" >
+
+        </div>
+    </div>
+
+    <div class="video-card">
+        <img class="thumbnail" src="https://alotofrandomcrap.files.wordpress.com/2018/06/casacover.jpg?w=1100" alt="Money Heist Cover" />
+        <div class="video-data-section">
+            <h3 class="video-title">Money Heist: Episode 3</h3>
+            <img class="channel-pic" src="https://i.pinimg.com/474x/90/f2/0e/90f20eff95f277c0d1152cecd1d07cc3.jpg" alt="Professor" />
+            <i style="color:white;">Professor</i>&nbsp;
+            <input type="button" class="w3-button w3-purple" name="Play" value="Play" id="play" >
+
+        </div>
+    </div>
+    <div class="video-card">
+        <img class="thumbnail" src="https://alotofrandomcrap.files.wordpress.com/2018/06/casacover.jpg?w=1100" alt="Money Heist Cover" />
+        <div class="video-data-section">
+            <h3 class="video-title">Money Heist: Episode 4</h3>
+            <img class="channel-pic" src="https://i.pinimg.com/474x/90/f2/0e/90f20eff95f277c0d1152cecd1d07cc3.jpg" alt="Professor" />
+            <i style="color:white;">Professor</i>&nbsp;
+            <input type="button" class="w3-button w3-purple" name="Play" value="Play" id="play" >
+
+        </div>
+    </div>
+    <div class="video-card">
+        <img class="thumbnail" src="https://alotofrandomcrap.files.wordpress.com/2018/06/casacover.jpg?w=1100" alt="Money Heist Cover" />
+        <div class="video-data-section">
+            <h3 class="video-title">Money Heist: Episode 5</h3>
+            <img class="channel-pic" src="https://i.pinimg.com/474x/90/f2/0e/90f20eff95f277c0d1152cecd1d07cc3.jpg" alt="Professor" />
+            <i style="color:white;">Professor</i>&nbsp;
+            <input type="button" class="w3-button w3-purple" name="Play" value="Play" id="play" >
+
+        </div>
+    </div>
+    <div class="video-card">
+        <img class="thumbnail" src="https://alotofrandomcrap.files.wordpress.com/2018/06/casacover.jpg?w=1100" alt="Money Heist Cover" />
+        <div class="video-data-section">
+            <h3 class="video-title">Money Heist: Episode 6</h3>
+            <img class="channel-pic" src="https://i.pinimg.com/474x/90/f2/0e/90f20eff95f277c0d1152cecd1d07cc3.jpg" alt="Professor" />
+            <i style="color:white;">Professor</i>&nbsp;
+            <input type="button" class="w3-button w3-purple" name="Play" value="Play" id="play" >
+
+        </div>
+    </div>
+    <div class="video-card">
+        <img class="thumbnail" src="https://alotofrandomcrap.files.wordpress.com/2018/06/casacover.jpg?w=1100" alt="Money Heist Cover" />
+        <div class="video-data-section">
+            <h3 class="video-title">Money Heist: Episode 7</h3>
+            <img class="channel-pic" src="https://i.pinimg.com/474x/90/f2/0e/90f20eff95f277c0d1152cecd1d07cc3.jpg" alt="Professor" />
+            <i style="color:white;">Professor</i>&nbsp;
+            <input type="button" class="w3-button w3-purple" name="Play" value="Play" id="play" >
+
+        </div>
+    </div>
+    <div class="video-card">
+        <img class="thumbnail" src="https://alotofrandomcrap.files.wordpress.com/2018/06/casacover.jpg?w=1100" alt="Money Heist Cover" />
+        <div class="video-data-section">
+            <h3 class="video-title">Money Heist: Episode 8</h3>
+            <img class="channel-pic" src="https://i.pinimg.com/474x/90/f2/0e/90f20eff95f277c0d1152cecd1d07cc3.jpg" alt="Professor" />
+            <i style="color:white;">Professor</i>&nbsp;
+            <input type="button" class="w3-button w3-purple" name="Play" value="Play" id="play" >
+
+        </div>
+    </div>
+</body>
+
+</html>
