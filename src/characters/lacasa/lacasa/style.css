@@ -1,0 +1,146 @@
+.content {
+    /* position: relative;
+    /* margin-top: 0px; */
+    /* margin-left: 0px; */
+    /* display: flex;
+    width: 100%;
+    height: 70 px;
+    justify-content: space-between;
+    align-items: center; */
+    background-image: url(../mh.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 90%;
+    /* border: 2px solid; */
+}
+
+.content1 {
+    /* position: relative;
+    /* margin-top: 0px; */
+    /* margin-left: 0px; */
+    /* display: flex;
+    width: 100%;
+    height: 70 px;
+    justify-content: space-between;
+    align-items: center; */
+    background-image: url(../spider.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 90%;
+    /* border: 2px solid; */
+}
+
+.content .text-area h1 {
+    text-transform: uppercase;
+    font-size: 47px;
+    margin-bottom: 6px;
+    color: white;
+    width: 60%;
+    font-weight: bolder;
+    letter-spacing: 3px;
+}
+
+.content .text-area h2 {
+    font-size: 16px;
+    margin-bottom: 6px;
+    color: white;
+    margin-top: 10px;
+    min-width: 100px;
+    font-weight: 500;
+}
+
+.content .text-area h3 {
+    text-transform: none;
+    margin-top: 15px;
+    font-size: 16px;
+    color: white;
+    letter-spacing: 10px;
+}
+
+.content .text-area h4 {
+    text-transform: none;
+    font-size: 15px;
+    margin-bottom: 3px;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.content .text-area a {
+    display: inline-block;
+    padding: 14px 24px;
+    margin-top: 5px;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: white;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: black;
+    text-decoration: none;
+}
+
+.content .text-area a:hover {
+    background-color: hsl(317 100% 54%);
+    color: white;
+    transition: 1s;
+}
+
+
+/* hfghsfvfer */
+
+.content1 .text-area1 h1 {
+    text-transform: uppercase;
+    font-size: 47px;
+    margin-bottom: 6px;
+    color: white;
+    width: 60%;
+    font-weight: bolder;
+    letter-spacing: 3px;
+}
+
+.content1 .text-area1 h2 {
+    font-size: 16px;
+    margin-bottom: 6px;
+    color: white;
+    margin-top: 10px;
+    min-width: 100px;
+    font-weight: 500;
+}
+
+.content1 .text-area1 h3 {
+    text-transform: none;
+    margin-top: 15px;
+    font-size: 16px;
+    color: white;
+    letter-spacing: 10px;
+}
+
+.content1 .text-area1 h4 {
+    text-transform: none;
+    font-size: 15px;
+    margin-bottom: 3px;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.content1 .text-area1 a {
+    display: inline-block;
+    padding: 14px 24px;
+    margin-top: 5px;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: white;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: black;
+    text-decoration: none;
+}
+
+.content1 .text-area1 a:hover {
+    background-color: hsl(317 100% 54%);
+    color: white;
+    transition: 1s;
+}
